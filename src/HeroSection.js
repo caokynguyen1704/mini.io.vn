@@ -26,7 +26,7 @@ const HeroSection = () => {
       backgroundSize="480px"
       backgroundPosition="center right"
       backgroundRepeat="no-repeat"
-      minH={{ base: 'unset', md: '300px' }}
+      minH={{ base: 'unset', md: '100px' }}
     >
       <Box
         bgImage={{ base: 'none', md: 'linear-gradient(45deg, #e9ecef 25%, rgba(0, 0, 0, 0) 95%)' }}
@@ -66,6 +66,7 @@ const HeroSection = () => {
         <HStack spacing={{ base: 0, sm: 2 }} flexWrap="wrap">
           <Flex
             as={Link}
+            href="https://www.facebook.com/groups/codingscriptmwbavn"
             justify="center"
             h={10}
             px={6}

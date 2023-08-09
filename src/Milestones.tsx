@@ -55,7 +55,7 @@ const milestones = [
 
 const Milestones = () => {
   return (
-    <Container maxWidth="2xl" p={{ base: 2, sm: 10 }}>
+    <Container maxWidth="2xl" p={{ base: 1, sm: 1 }}>
       <chakra.h3 fontSize="4xl" fontWeight="bold" mb={18} textAlign="center">
         Lộ trình
       </chakra.h3>
@@ -80,12 +80,13 @@ interface CardProps {
 const Card = ({ title, categories, description, icon, date }: CardProps) => {
   return (
     <HStack
-      p={{ base: 3, sm: 1 }}
+      p={{ base: 1, sm: 1 }}
       bg={useColorModeValue('gray.100', 'gray.800')}
       spacing={5}
       rounded="lg"
       alignItems="center"
       pos="relative"
+      width="100%"
       _before={{
         content: `""`,
         w: '0',
@@ -102,7 +103,7 @@ const Card = ({ title, categories, description, icon, date }: CardProps) => {
       <Box>
         <HStack spacing={2} mb={1}>
           {categories.map((cat) => (
-            <Text fontSize="sm" key={cat}>
+            <Text fontSize="smaller" key={cat}>
               {cat}
             </Text>
           ))}
@@ -111,7 +112,7 @@ const Card = ({ title, categories, description, icon, date }: CardProps) => {
           <chakra.h1
             as={Link}
             _hover={{ color: 'teal.400' }}
-            fontSize="2xl"
+            fontSize="4x1"
             lineHeight={1.2}
             fontWeight="bold"
             w="100%"
