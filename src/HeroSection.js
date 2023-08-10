@@ -8,7 +8,10 @@ import {
   Flex,
   Link,
   Icon,
-  useColorModeValue
+  useColorModeValue,
+  Image,
+  Button,
+  Center
 } from '@chakra-ui/react';
 import logo from './logo.png'
 // Here we have used react-icons package for the icons
@@ -16,54 +19,74 @@ import { FaFacebook, FaGithub } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
-    <Stack
-      p={{ base: 5, md: 10 }}
-      direction={{ base: 'column', md: 'row' }}
-      bgImage={{
-        base: 'none',
-        md: logo
-      }}
-      backgroundSize="480px"
-      backgroundPosition="center right"
-      backgroundRepeat="no-repeat"
-      minH={{ base: 'unset', md: '100px' }}
-    >
+    <Box px={8} py={4} mx="auto">
+
       <Box
-        bgImage={{ base: 'none', md: 'linear-gradient(45deg, #e9ecef 25%, rgba(0, 0, 0, 0) 95%)' }}
-        position="absolute"
-        top="0"
-        bottom="0"
-        left="0"
-        right="0"
-        zIndex="0"
-        opacity="0.8"
-      ></Box>
-      <Stack
-        pos="relative"
-        zIndex={1}
-        direction="column"
-        justifyContent="center"
-        spacing={6}
-        maxW="550px"
+        w={{
+          base: "full",
+          md: 11 / 12,
+          xl: 9 / 12,
+        }}
+        mx="auto"
+        textAlign={{
+          base: "left",
+          md: "center",
+        }}
       >
         <chakra.h1
-          fontSize={{ base: '3xl', sm: '5xl' }}
-          lineHeight={1}
+          textAlign="center"
+          mb={6}
+          fontSize={{
+            base: "4xl",
+            md: "6xl",
+          }}
           fontWeight="bold"
-          textAlign="left"
+          lineHeight="none"
+          letterSpacing={{
+            base: "normal",
+            md: "tight",
+          }}
+          color="gray.900"
+          _dark={{
+            color: "gray.100",
+          }}
         >
-          Khám phá MINI.io <br />
+          Những gì bạn cần là {" "}
+          <Text
+            display={{
+              base: "block",
+              lg: "inline",
+            }}
+            w="full"
+            bgClip="text"
+            bgGradient="linear(to-r, green.400,purple.500)"
+            fontWeight="extrabold"
+          >
+            MINI.io
+            
+          </Text>{" "}
+          <Text> ngay lúc này.</Text>
         </chakra.h1>
-        <Text
-          fontSize="1.2rem"
-          textAlign="left"
-          lineHeight="1.375"
-          fontWeight="400"
-          color={useColorModeValue('gray.500', 'gray.700')}
+        <chakra.p
+          px={{
+            base: 0,
+            lg: 24,
+          }}
+          mb={6}
+          fontSize={{
+            base: "lg",
+            md: "xl",
+          }}
+          color="gray.600"
+          _dark={{
+            color: "gray.300",
+          }}
         >
-        Nền tảng công nghệ trực tuyến.
-        </Text>
-        <HStack spacing={{ base: 0, sm: 2 }} flexWrap="wrap">
+          {/* test */}
+        </chakra.p>
+
+<Center>
+<HStack spacing={{ base: 0, sm: 2 }} flexWrap="wrap"> 
           <Flex
             as={Link}
             href="https://www.facebook.com/groups/codingscriptmwbavn"
@@ -81,8 +104,11 @@ const HeroSection = () => {
             <chakra.span ml={1}> Kết nối</chakra.span>
           </Flex>
         </HStack>
-      </Stack>
-    </Stack>
+</Center>
+        
+      </Box>
+
+    </Box>
   );
 };
 

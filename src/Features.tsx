@@ -40,8 +40,8 @@ const features: IFeature[] = [
 const Features = () => {
   return (
     <Container maxW="3xl" p={{ base: 0, md: 0 }}>
-      <chakra.h3 fontSize="4xl" fontWeight="bold" mb={3} textAlign="center">
-        Tính năng
+      <chakra.h3 fontSize="4xl" fontWeight="bold" mb={18} textAlign="center">
+       Tính năng
       </chakra.h3>
       <SimpleGrid columns={{ base: 1, md: 2 }} placeItems="center" spacing={16} mt={12} mb={4}>
         {features.map((feature, index) => (

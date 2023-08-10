@@ -8,6 +8,7 @@ import {
   Text,
   Image,
   Container,
+  chakra,
 } from '@chakra-ui/react';
 import img_dat from './dev/dat.jpg'
 import img_RKevo from './dev/RKevo.png'
@@ -47,7 +48,7 @@ const companies = [
   {
     title: 'Mimpi Vn',
     alt: 'company image',
-    role: 'Designer',
+    role: 'Marketing',
     period: '2023 - Present',
     logo: img_Mini
   },
@@ -63,6 +64,9 @@ const companies = [
 const Index = () => {
   return (
     <Container maxW="4xl" p={{ base: 5, md: 12 }}>
+       <chakra.h3 fontSize="4xl" fontWeight="bold" mb={18} textAlign="center">
+        Nhân sự
+      </chakra.h3>
       <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]}>
         {companies.map(({ title, role, period, logo, alt }, index) => (
           <Box
@@ -118,7 +122,7 @@ function getColorForRole(role) {
     case "Tester":
       return "blue.500";
     default:
-      return "yellow.300"; 
+      return "pink.300"; 
   }
 }
 

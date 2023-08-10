@@ -1,13 +1,12 @@
-import { Container,  Stack, Text } from '@chakra-ui/react'
+import { Center, Container,  Stack, Text } from '@chakra-ui/react'
 import React from 'react'
 
 export const Footer = () => (
-  <Container as="footer" role="contentinfo" py={{ base: '12', md: '16' }}>
-    <Stack spacing={{ base: '4', md: '5' }}>
-     
-      <Text fontSize="sm" color="fg.subtle">
-        &copy; {new Date().getFullYear()} Chakra UI Pro, Inc. All rights reserved.
+  <Container  role="contentinfo" position="fixed" bottom="0px" left="0" width="100%">
+ 
+      <Text fontSize="smaller" color="fg.subtle">
+        &copy; {new Date().getFullYear()} DevMini. All rights reserved.
       </Text>
-    </Stack>
+      
   </Container>
 )
