@@ -64,6 +64,7 @@ const HeroSection = () => {
           <Text> ngay lúc này.</Text>
         </chakra.h1>
         <chakra.p
+        textAlign="center"
           px={{
             base: 0,
             lg: 24,
@@ -78,6 +79,7 @@ const HeroSection = () => {
             color: "gray.300",
           }}
         >
+          Tham gia group ngay để theo dõi thời gian OpenBeta. Và nhận nhiều phần quà hấp dẫn.
           {/* test */}
         </chakra.p>
 

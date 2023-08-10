@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <ChakraProvider>
     <Helmet>
-        <title>Kết nối công nghệ</title>
+        <title>MINI.io</title>
         <link rel='icon'  type="image/png" href={logo} />
         <meta property="og:title" content="Mini.io.vn" />
         <meta property="og:description" content="Nền tảng công nghệ trực tuyến" />

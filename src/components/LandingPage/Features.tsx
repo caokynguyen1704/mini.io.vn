@@ -16,23 +16,23 @@ const features: IFeature[] = [
   {
     heading: 'Tranh tài',
     content:
-      'Liệu bạn có phải là quán quân trong các cuộc thi lập trình.',
+      'Cung cấp nền tảng thi viết code trực tuyến, giúp bạn thử thách khả năng lập trình và xây dựng mã nguồn một cách thuận tiện và hiệu quả.',
     icon: MdWbIncandescent
   },
   {
     heading: 'Học tập',
-    content: `Nơi tập hợp các khóa học.`,
+    content: `Là điểm đến đa dạng, nơi mọi người có thể tham gia vào các khóa học hấp dẫn để mở rộng kiến thức và kỹ năng trong môi trường trực tuyến.`,
     icon: FaSchool
   },
   {
     heading: 'Chia sẻ',
     content:
-      'Chia sẽ mã nguồn một cách trực quan và dễ dàng.',
+      'Một cộng đồng trực tuyến đầy thú vị, nơi bạn có thể chia sẻ kiến thức, trao đổi ý tưởng và công khai mã nguồn, giúp thúc đẩy sự học hỏi và phát triển chung trong lĩnh vực của bạn.',
     icon: BsShare
   },
   {
     heading: 'Công nghệ',
-    content: `Chúng tôi có tất cả tính năng bạn cần.`,
+    content: `Nền tảng cung cấp các giải pháp công nghệ đa dạng, giúp bạn tiếp cận và áp dụng những công nghệ mới nhất vào dự án của mình một cách dễ dàng và hiệu quả.`,
     icon: MdDeveloperMode
   }
 ];

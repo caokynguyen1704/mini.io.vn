@@ -8,6 +8,7 @@ import Milestones from './components/LandingPage/Milestones.tsx';
 import Features from './components/LandingPage/Features.tsx';
 import Index from './components/LandingPage/Dev.tsx';
 import { Footer } from './components/LandingPage/Footer.tsx';
+import { Footer_end } from './components/LandingPage/Footer_end';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Features/>
         <Milestones />
         <Index/>
+        <Footer_end/>
       </Stack>
     </Center>
     <Footer/>

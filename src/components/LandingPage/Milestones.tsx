@@ -9,11 +9,12 @@ import {
   VStack,
   Flex,
   Icon,
-  useColorModeValue
+  useColorModeValue,
+  Badge
 } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
-import {  FaRegistered, FaSchool, FaShareSquare } from 'react-icons/fa';
-import {  BsPersonFillExclamation } from 'react-icons/bs';
+import { FaRegistered, FaSchool, FaShareSquare } from 'react-icons/fa';
+import { BsPersonFillExclamation } from 'react-icons/bs';
 import { IconType } from 'react-icons';
 
 const milestones = [
@@ -23,7 +24,8 @@ const milestones = [
     title: 'Mini.io.vn',
     icon: FaRegistered,
     description: `Tên miền được đăng ký và bắt đầu hoạt động`,
-    date: '24 tháng 7 năm 2023'
+    date: '24 tháng 7 năm 2023',
+    type: 1,
   },
   {
     id: 2,
@@ -31,7 +33,8 @@ const milestones = [
     title: '[Dự kiến] Tài khoản',
     icon: BsPersonFillExclamation,
     description: `Mở đăng ký tài khoản`,
-    date: 'Tháng 9 năm 2023'
+    date: 'Tháng 10 năm 2023',
+    type: 0,
   },
   {
     id: 3,
@@ -39,7 +42,8 @@ const milestones = [
     title: '[Dự kiến] Lua Sharing',
     icon: FaShareSquare,
     description: `Viết và chia sẽ mã nguồn Lua của bạn với mọi người chỉ bằng một liên kết.`,
-    date: 'Tháng 10 năm 2023'
+    date: 'Tháng 10 năm 2023',
+    type: 0,
   },
   {
     id: 4,
@@ -47,7 +51,8 @@ const milestones = [
     title: '[Kế hoạch] Course',
     icon: FaSchool,
     description: `Đăng ký và tham gia các khóa học có sẵn.`,
-    date: 'Kế hoạch'
+    date: 'Kế hoạch',
+    type: 2,
   }
 ];
 
@@ -55,7 +60,7 @@ const Milestones = () => {
   return (
     <Container maxWidth="2xl" p={{ base: 1, sm: 1 }}>
       <chakra.h3 fontSize="4xl" fontWeight="bold" mb={18} textAlign="center">
-        Lộ trình
+        Lộ trình phát triển
       </chakra.h3>
       {milestones.map((milestone, index) => (
         <Flex key={index} mb="10px">
@@ -73,9 +78,10 @@ interface CardProps {
   description: string;
   icon: IconType;
   date: string;
+  type: number;
 }
 
-const Card = ({ title, categories, description, icon, date }: CardProps) => {
+const Card = ({ title, categories, description, icon, date, type }: CardProps) => {
   return (
     <HStack
       p={{ base: 1, sm: 1 }}
@@ -115,7 +121,16 @@ const Card = ({ title, categories, description, icon, date }: CardProps) => {
             fontWeight="bold"
             w="100%"
           >
-            {title}
+            {title}{' '}
+            {type === 1 ? (
+              <Badge colorScheme='green'>Hoàn tất</Badge>
+            ) : type == 0 ? (
+              <Badge colorScheme='purple'>Dự kiến</Badge>
+            ) : (
+              <Badge variant='outline' colorScheme='green'>
+                Đang triển khai
+              </Badge>
+            )}
           </chakra.h1>
           <Text fontSize="md" noOfLines={2}>
             {description}
