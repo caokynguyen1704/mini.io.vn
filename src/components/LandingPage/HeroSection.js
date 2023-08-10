@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {
   chakra,
-  Stack,
   HStack,
   Text,
   Box,
@@ -9,11 +8,8 @@ import {
   Link,
   Icon,
   useColorModeValue,
-  Image,
-  Button,
   Center
 } from '@chakra-ui/react';
-import logo from './logo.png'
 // Here we have used react-icons package for the icons
 import { FaFacebook, FaGithub } from 'react-icons/fa';
 

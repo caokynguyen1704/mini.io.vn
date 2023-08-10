@@ -12,11 +12,9 @@ import {
   useColorModeValue
 } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
-import { FaRegNewspaper, FaRegistered, FaSchool, FaShareSquare } from 'react-icons/fa';
-import { BsGithub, BsPersonFillExclamation } from 'react-icons/bs';
+import {  FaRegistered, FaSchool, FaShareSquare } from 'react-icons/fa';
+import {  BsPersonFillExclamation } from 'react-icons/bs';
 import { IconType } from 'react-icons';
-import { MdLogin } from 'react-icons/md';
-import { userInfo } from 'os';
 
 const milestones = [
   {

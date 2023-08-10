@@ -10,12 +10,13 @@ import {
   Container,
   chakra,
 } from '@chakra-ui/react';
-import img_dat from './dev/dat.jpg'
-import img_RKevo from './dev/RKevo.png'
-import img_Nam from './dev/nam.jpeg';
-import img_Mini from './dev/MimpiVn.png';
-import img_ky from './dev/ky.jpg'
-import img_linh from './dev/linh.jpg'
+import img_dat from '../../dev/dat.jpg'
+import img_RKevo from '../../dev/RKevo.png'
+import img_Nam from '../../dev/nam.jpeg';
+import img_Mini from '../../dev/MimpiVn.png';
+import img_ky from '../../dev/ky.jpg'
+import img_linh from '../../dev/linh.jpg'
+
 const companies = [
   {
     title: 'Nguyễn Cao Kỳ',

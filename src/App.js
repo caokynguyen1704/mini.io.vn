@@ -3,11 +3,11 @@
 import {  Center, Stack } from '@chakra-ui/react';
 import './App.css';
 
-import HeroSection from './HeroSection';
-import Milestones from './Milestones.tsx';
-import Features from './Features.tsx';
-import Index from './Dev.tsx';
-import { Footer } from './Footer.tsx';
+import HeroSection from './components/LandingPage/HeroSection';
+import Milestones from './components/LandingPage/Milestones.tsx';
+import Features from './components/LandingPage/Features.tsx';
+import Index from './components/LandingPage/Dev.tsx';
+import { Footer } from './components/LandingPage/Footer.tsx';
 
 function App() {
 
